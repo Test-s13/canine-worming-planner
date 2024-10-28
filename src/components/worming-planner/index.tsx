@@ -39,6 +39,9 @@ const WormingScheduler: React.FC = () => {
       minute: '2-digit',
     }) ?? '';
 
+  // Determine alert background color based on whether a travel date is set
+  const alertBackgroundColor = travelDate ? 'bg-green-100 border-green-400 text-green-700' : 'bg-red-100 border-red-400 text-red-700';
+
   return (
     <div className="max-w-2xl mx-auto p-4">
       <Card>
@@ -71,7 +74,7 @@ const WormingScheduler: React.FC = () => {
           </div>
 
           {/* Appointment Window Display */}
-          <Alert>
+          <Alert className={alertBackgroundColor}>
             <AlertDescription>
               <div className="space-y-2">
                 <div className="font-medium">Valid Appointment Window:</div>
