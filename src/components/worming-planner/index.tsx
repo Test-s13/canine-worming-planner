@@ -103,7 +103,7 @@ const WormingScheduler: React.FC = () => {
               <li>Worming only required for dogs (not cats or ferrets)</li>
               
               <li>
-                <strong>Returning to the UK:</strong> Dogs need to be wormed before re-entry into Great Britain from any EU country, except if travelling from <strong>Ireland, Northern Ireland, Malta, Finland, or Norway</strong>, where no worming is needed for re-entry.
+                <strong>Returning to the UK:</strong> Dogs need to be wormed before re-entry into Great Britain from any EU country (administered and witnessed 24-120 hours prior to arrival), except if travelling to the UK directly from <strong>Ireland, Northern Ireland, Malta, Finland, or Norway</strong>, where no worming is needed for re-entry.
               </li>
               
               <li>
