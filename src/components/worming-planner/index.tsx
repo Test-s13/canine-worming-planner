@@ -29,8 +29,8 @@ const WormingScheduler: React.FC = () => {
     };
   }, [travelDate]);
 
-  // Determine alert background color
-  const alertBackgroundColor = travelDate ? "bg-green-100" : "bg-red-100";
+  // Determine alert color based on whether travelDate is set
+  const alertBackgroundColor = travelDate ? 'bg-green-100' : 'bg-red-100';
 
   // Format dates for display
   const formatDateTime = (date: Date | undefined): string =>
