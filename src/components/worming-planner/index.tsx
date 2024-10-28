@@ -29,6 +29,9 @@ const WormingScheduler: React.FC = () => {
     };
   }, [travelDate]);
 
+  // Determine alert background color
+  const alertBackgroundColor = travelDate ? "bg-green-100" : "bg-red-100";
+
   // Format dates for display
   const formatDateTime = (date: Date | undefined): string =>
     date?.toLocaleString('en-GB', {
@@ -38,9 +41,6 @@ const WormingScheduler: React.FC = () => {
       hour: '2-digit',
       minute: '2-digit',
     }) ?? '';
-
-  // Determine alert background color based on whether a travel date is set
-  const alertBackgroundColor = travelDate ? 'bg-green-100 border-green-400 text-green-700' : 'bg-red-100 border-red-400 text-red-700';
 
   return (
     <div className="max-w-2xl mx-auto p-4">
