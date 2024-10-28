@@ -90,7 +90,7 @@ const WormingScheduler: React.FC = () => {
                   </>
                 )}
                 <div className="text-sm text-gray-600 mt-2">
-                  The worming treatment must be administered and witnessed by a veterinarian between these times and recorded on your Animal Health Certificate.
+                  The worming treatment must be administered and witnessed by a veterinarian between these times and recorded on your Animal Health Certificate. Worming cannot be administered before the AHC is issued.
                 </div>
               </div>
             </AlertDescription>
